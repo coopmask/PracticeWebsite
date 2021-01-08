@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .title-text,
 .btn,
 .appetizer,
 .order-text,
-.pickup-text,
 .main-description,
 .workdays {
   font-family: "Ubuntu", sans-serif;
@@ -22,7 +22,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -70,52 +71,260 @@ html, body {
 }
 
 .welcome-section {
-    background-image: url("images/Fire.jpg");
-    background-size: cover;
-    padding-bottom: 3em;
+  background-image: url("images/Fire.jpg");
+  background-size: cover;
+  padding-bottom: 4.5em;
 }
 
 .text {
-    margin: 0;
-    color: white;
-    text-align: center;
+  margin: 0;
+  color: white;
+  text-align: center;
 }
 
 .welcome-text {
-    padding-top: 2em;
-    font-size: 1.8em;
+  padding-top: 2em;
+  font-size: 1.9em;
 }
 
 .title-text {
-    padding: 0;
-    font-size: 3em;
+  padding: 0;
+  font-size: 3em;
 }
 
 .border-text {
-    padding-top: 0.1em;
-    font-size: 2.8em;
-    margin-bottom: 0;
+  padding-top: 0.1em;
+  font-size: 2.8em;
+  margin-bottom: 0;
 }
 
 .food-description {
-    font-size: 1.7em;
-    padding-bottom: 0.8em;
+  font-size: 1.7em;
+  padding-bottom: 0.8em;
 }
 
 .btn {
-    color: white;
-    background-color: rgb(2, 154, 255);
-    height: 3.3em;
-    width: 10em;
-    font-weight: bold;
-    border: 2px solid white;
-    border-radius: 0.3em;
-    margin:auto;
-    display:block;
+  color: white;
+  background-color: rgb(2, 154, 255);
+  height: 3.3em;
+  width: 10em;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 0.3em;
+  margin: auto;
+  display: block;
 }
 
 .btn:hover {
-    cursor: pointer;
-    background-color: rgb(2, 121, 201);
+  cursor: pointer;
+  background-color: rgb(2, 121, 201);
 }
 
+.specialty-container {
+  padding-bottom: 2em;
+}
+
+.specialty {
+  text-align: center;
+  font-size: 1.9em;
+  margin-bottom: 0;
+}
+
+.specialty-border-text {
+  text-align: center;
+  margin-top: 0;
+}
+
+.appetizer-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.appetizer {
+  text-align: center;
+}
+
+.main-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.appetizer-section {
+  padding-bottom: 4em;
+}
+
+.order-section {
+  background-color: rgb(39, 27, 12);
+}
+
+.order-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 5em;
+}
+
+.order-btn {
+  color: white;
+  background-color: rgb(2, 154, 255);
+  height: 3.7em;
+  width: 16.5em;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 0.3em;
+  margin-top: 2em;
+}
+
+.order-text {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.have-text {
+    font-size: 40px;
+    padding-top: 0.7em;
+    margin: 0;
+}
+
+.order-online-text {
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 0.3em;
+}
+
+.pickup-text {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 0.7em;
+}
+
+.delivery-text {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 0.7em;
+}
+
+.pickup-text::before {
+    content: "* ";
+}
+
+.delivery-text::before {
+    content: "* ";
+}
+
+.order-btn:hover {
+    cursor: pointer;
+    background-color: rgb(2, 121, 201);
+  }
+
+.people-section {
+    background-image: url("images/Lantern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 8em;
+    padding-top: 0.1em;
+}
+
+.feedback-container {
+    background-color: rgba(88, 88, 88, 0.9);
+    width: 600px;
+    height: 300px;
+    margin-left: 1.5em;
+    margin-top: 8em;
+    resize: horizontal;
+    overflow: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.feedback {
+    color: white;
+    padding: 3.5em 3em;
+}
+
+.people {
+    font-size: 30px;
+}
+
+.workdays {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.main-footer {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    height: 250px;
+}
+
+.main-list {
+   padding: 2em 2em;
+}
+
+.social-media-list {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+.footer-text {
+    padding-left: 1em;
+}
+
+.social-media-image {
+    cursor: pointer;
+}
+
+.social-media-image:hover {
+    opacity: 0.7;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.contact-text {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 2em;
+}
+
+.form-control {
+    width: 400px;
+    height: 40px;
+}
+
+.form-control-message {
+    width: 400px;
+}
+
+.label-container {
+    padding-bottom: 1.5em;
+}
+
+.label-container-btn {
+    padding-bottom: 4em;
+}
+
+.form-btn {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .appetizer-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .chicken-image {
+    width: 100%;
+  }
+}
